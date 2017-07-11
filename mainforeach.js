@@ -8,7 +8,6 @@ console.log(data);
 
 // 1: Show me how to calculate the average price of all items.
 function question1 () {
-  // Answer:
   let totcost = 0;
   let averageCost = 0;
   data.forEach(function(data){
@@ -22,7 +21,6 @@ function question1 () {
 
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
 function question2 () {
-  // Answer:
   let specialNums = [];
   data.forEach(function(data){
     if (data.price >=14 && data.price <=18) {
@@ -36,7 +34,6 @@ function question2 () {
 
 // 3: Which item has a "GBP" currency code? Display it's name and price.
 function question3 () {
-  // Answer:
   data.forEach(function(data) {
     if (data.currency_code === "GBP") {
       console.log(data.title);
@@ -48,7 +45,6 @@ function question3 () {
 
 // // 4: Display a list of all items who are made of wood.
 function question4 () {
-  //Answer:
     data.forEach(function(data) {
       if (data.materials.includes("wood")) {
         console.log(data.title);
@@ -59,7 +55,6 @@ function question4 () {
 // // 5: Which items are made of eight or more materials?
 // //    Display the name, number of items and the items it is made of.
 function question5 () {
-  // Answer:
   data.forEach(function(data) {
     if (data.materials.length >= 8) {
       console.log(data.title);
@@ -75,7 +70,6 @@ function question5 () {
 // // 6: How many items were made by their sellers?
 // // Answer:
 function question6 () {
-  // Answer:
   let handmadeNumber = 0
   data.forEach(function(data) {
     if (data.who_made === "i_did") {
