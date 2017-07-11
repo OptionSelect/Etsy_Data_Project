@@ -64,8 +64,8 @@ function question5 () {
     if (data.materials.length >= 8) {
       console.log(data.title);
       console.log("This is made of " + data.materials.length + " different items");
-      data.materials.forEach(function(data) {
-        console.log("- " + data);
+      data.materials.forEach(function(materials) {
+        console.log("- " + materials);
       })
     }
   })
